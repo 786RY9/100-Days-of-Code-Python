@@ -1,0 +1,72 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="y2w906Qwa9LY5w-elI_d">
+    <mxGraphModel dx="777" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BqDeM3FwXbhmS88RTBnG-1" target="BqDeM3FwXbhmS88RTBnG-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-1" value="Take user input of name and Bid amount" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="60" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.393;exitY=0.019;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BqDeM3FwXbhmS88RTBnG-14" target="BqDeM3FwXbhmS88RTBnG-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="351" />
+              <mxPoint x="130" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-8" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BqDeM3FwXbhmS88RTBnG-4">
+          <mxGeometry x="-0.8347" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BqDeM3FwXbhmS88RTBnG-3" target="BqDeM3FwXbhmS88RTBnG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-3" value="Store it in dictionary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-5" value="Repeat" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="178" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.959;exitY=0.496;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BqDeM3FwXbhmS88RTBnG-6" target="BqDeM3FwXbhmS88RTBnG-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-11" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BqDeM3FwXbhmS88RTBnG-10">
+          <mxGeometry x="-0.3841" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BqDeM3FwXbhmS88RTBnG-6" target="BqDeM3FwXbhmS88RTBnG-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-6" value="Any person left" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="252" y="340" width="105" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-9" value="Output the Highest Bidder" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-12" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="257.5" y="10" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.479;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BqDeM3FwXbhmS88RTBnG-12" target="BqDeM3FwXbhmS88RTBnG-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="302" y="50" />
+              <mxPoint x="302" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BqDeM3FwXbhmS88RTBnG-14" value="Clear Screen" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
