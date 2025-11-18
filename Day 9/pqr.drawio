@@ -1,0 +1,82 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="iQ9vSW4tr2n8I-RBry2y">
+    <mxGraphModel dx="247" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-1" target="Ohqtvm3S-n6YlJpUGhdU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-1" value="start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-2" target="Ohqtvm3S-n6YlJpUGhdU-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-2" value="Give 2 cards to Each computer and user" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-4" target="Ohqtvm3S-n6YlJpUGhdU-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-4" value="Show both to user and give user both cards sum.&amp;nbsp;&lt;div&gt;And show 1 card value to user and keep the 2nd card value secret&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="279" y="330" width="172" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-6" target="Ohqtvm3S-n6YlJpUGhdU-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="257.5" y="542.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-15" value="y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ohqtvm3S-n6YlJpUGhdU-9">
+          <mxGeometry x="-0.2346" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-6" target="Ohqtvm3S-n6YlJpUGhdU-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-6" value="pick another card?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="500" width="85" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-10" target="Ohqtvm3S-n6YlJpUGhdU-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-13" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ohqtvm3S-n6YlJpUGhdU-12">
+          <mxGeometry x="-0.3397" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-10" value="current score&amp;gt;21&lt;div&gt;and&amp;nbsp;&lt;/div&gt;&lt;div&gt;give computer&lt;/div&gt;&lt;div&gt;another card&amp;nbsp;&lt;/div&gt;&lt;div&gt;as well&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="450" width="150" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-11" value="lose" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.509;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-10" target="Ohqtvm3S-n6YlJpUGhdU-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="363" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-16" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="468" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ohqtvm3S-n6YlJpUGhdU-19" target="Ohqtvm3S-n6YlJpUGhdU-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-23" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ohqtvm3S-n6YlJpUGhdU-22">
+          <mxGeometry x="-0.4259" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-19" value="user sum &amp;gt; computer sum&lt;div&gt;or computer sum &amp;gt; 21&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="640" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Ohqtvm3S-n6YlJpUGhdU-21" value="" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
