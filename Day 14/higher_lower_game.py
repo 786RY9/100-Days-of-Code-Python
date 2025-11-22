@@ -41,22 +41,24 @@ def game():
     print(logo)
     narrators_dict = load_data('Day 14/hadith_narrators.csv')
 
-
-    
     first_person, first_person_narrations = random.choice(list(narrators_dict.items()))
     
 
 
     second_person, second_person_narrations = random.choice(list(narrators_dict.items()))
     
-
-
+    while first_person == second_person:
+        second_person, second_person_narrations = random.choice(list(narrators_dict.items()))
+    
 
 
     # now let user make a guess, take user guess input
     comparison_result = True
     score  = 0
+    
     while comparison_result:
+        
+        
         print('Compare who has narrated more Hadiths.')
         print(f'A: {first_person}')
         print(vs)
@@ -69,7 +71,6 @@ def game():
 
         # lets do comparison and give response of who narrated more
         comparison_result, highest_hadith_narrator = compare(first_person_narrations,second_person_narrations,user_answer)
-        
 
         if comparison_result==True:
             score+=1
@@ -78,11 +79,14 @@ def game():
                 print(f'Your current score: {score}')
                 
                 second_person, second_person_narrations = random.choice(list(narrators_dict.items()))
+                while first_person == second_person:
+                    second_person, second_person_narrations = random.choice(list(narrators_dict.items()))
             else:
                 print(f'Yes you answered correctly. {second_person} narrated more Hadiths than {first_person}')
-                first_person, first_person_narrations = random.choice(list(narrators_dict.items()))
+                first_person, first_person_narrations = second_person, second_person_narrations
+                while first_person == second_person :
+                    second_person, second_person_narrations = random.choice(list(narrators_dict.items()))
                 print(f'Your current score: {score}')
-
         else:
             if highest_hadith_narrator == 'first_person':
                 print(f'Sorry, {first_person} narrated more Hadiths than {second_person}')
