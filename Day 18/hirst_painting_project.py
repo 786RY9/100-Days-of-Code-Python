@@ -41,10 +41,12 @@ all_colors = [(229, 234, 240), (232, 242, 239), (1, 9, 29), (246, 240, 245), (12
 #     tim.setheading(0)
 
 tim.penup()
+tim.hideturtle()
 tim.setheading(225)
 tim.forward(300)
 tim.setheading(0)
 tim.speed('fastest')
+
 number_dots = 100
 for dots_count in range(1,number_dots+1):
     
