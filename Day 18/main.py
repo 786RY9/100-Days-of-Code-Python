@@ -6,8 +6,8 @@ import random
 t.colormode(255)
 tim = Turtle()
 
-tim.shape('turtle')
-tim.color('green','red')
+tim.shape('classic')
+# tim.color('green','red')
 
 # for i in range(4):
 #     tim.forward(100)
@@ -93,7 +93,21 @@ def do_a_random_walk():
 #     i+=1
 
 
-do_a_random_walk()
+# do_a_random_walk()
+def draw_spirograph(gap):
+    
+    tim.speed('fastest')
+    for _ in range(int(360/gap)):
+        tim.color((random.randint(0,255),random.randint(0,255),random.randint(0,255)))
+        tim.setheading(tim.heading()+gap)
+        tim.circle(100)
+        
+        
+draw_spirograph(5)
+
+
+
+
 
 
 screen = Screen()
