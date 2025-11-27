@@ -1,0 +1,10 @@
+1. Make jumping turtle game in Day 19
+
+2. Using python selenium make a tool that can analyze current market of some particular field like if want to know about current Market of RAG based projects. It should go to different freelancing platforms search there about that field using AI generated suggestions and list down if there are projects and work available to that field. Similarly it should go and search for all other fields and show a chart of work and jobs high in demand from last 2 to 3 days or even months if could afford.
+
+3. 
+
+
+
+
+
