@@ -41,16 +41,6 @@ class Snake:
         
     def mirror(self):
         print('Inside mirror function')
-        # if self.head.heading() == UP:
-        #     # print(self.head.heading())
-        #     self.head.sety(-280)
-        # elif self.head.heading() == DOWN :
-        #     self.head.sety(280)
-        # elif self.head.heading() == LEFT:
-        
-        #     self.head.setx(290)
-        # elif self.head.heading() == RIGHT:
-        #     self.head.setx(-290)
     
         current_x = self.head.xcor()
         current_y = self.head.ycor()
