@@ -1,6 +1,6 @@
 from turtle import Turtle
 
-STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+STARTING_POSITIONS = [ (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP = 90
 DOWN = 270
@@ -18,6 +18,14 @@ class Snake:
         
     
     def create_snake(self):
+        i = 0
+        if i ==0:
+            new_segment = Turtle('turtle')
+            new_segment.color('white')
+            new_segment.penup()
+            new_segment.goto((0,0))
+            self.segments.append(new_segment)
+            i+=1
         for position in STARTING_POSITIONS:
             self.add_segment(position)
 
@@ -31,6 +39,40 @@ class Snake:
     def extend(self):
         self.add_segment(self.segments[-1].position())
         
+    def mirror(self):
+        print('Inside mirror function')
+        # if self.head.heading() == UP:
+        #     # print(self.head.heading())
+        #     self.head.sety(-280)
+        # elif self.head.heading() == DOWN :
+        #     self.head.sety(280)
+        # elif self.head.heading() == LEFT:
+        
+        #     self.head.setx(290)
+        # elif self.head.heading() == RIGHT:
+        #     self.head.setx(-290)
+    
+        current_x = self.head.xcor()
+        current_y = self.head.ycor()
+        
+        # Warping across the horizontal boundaries
+        if current_x > 280 and self.head.heading() == RIGHT:
+            # Snake went off the right edge, warp to the left edge
+            # We set it to -280 (or -270) to place it just inside the boundary
+            self.head.setx(-280) 
+            
+        elif current_x < -280 and self.head.heading() == LEFT:
+            # Snake went off the left edge, warp to the right edge
+            self.head.setx(280)
+            
+        # Warping across the vertical boundaries
+        if current_y > 280 and self.head.heading() == UP:
+            # Snake went off the top edge, warp to the bottom edge
+            self.head.sety(-280)
+            
+        elif current_y < -280 and self.head.heading() == DOWN:
+            # Snake went off the bottom edge, warp to the top edge
+            self.head.sety(280)
         
     def move(self):
         
