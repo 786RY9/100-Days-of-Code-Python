@@ -4,10 +4,15 @@ FONT = ('Arial',16,'normal')
 
 class ScoreBoard(Turtle):
     
+    def read_highscore(self):
+        with open("Day 21/data.txt") as file:
+            highscore = int(file.read())
+        return highscore
+    
     def __init__(self):
         super().__init__()
         self.hideturtle()
-        self.highscore = 0
+        self.highscore = self.read_highscore()
         self.score = 0
         self.color('white')  
         self.goto(x=0,y=270)
@@ -27,6 +32,12 @@ class ScoreBoard(Turtle):
     def reset(self):
         if self.score > self.highscore:
             self.highscore = self.score
+            self.update_highscore(self.highscore)
+            
         self.score = 0
         self.current_score()
-        
+    
+    def update_highscore(self, highscore):
+        with open("Day 21/data.txt", mode="w") as file:
+            file.write(str(highscore))
+        print(f'inside update_highscore function: {self.highscore}')

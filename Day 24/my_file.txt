@@ -1,0 +1,4 @@
+New text.
+appending new texthfdaslfjl saappending new text
+ back slash n to append in file on a new line else it will start appending at point where files last character was. appending new text
+back slash n to append in file on a new line else it will start appending at point where files last character was. appending new text

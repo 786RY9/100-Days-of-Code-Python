@@ -40,27 +40,27 @@ class Snake:
         self.add_segment(self.segments[-1].position())
         
     def mirror(self):
-        print('Inside mirror function')
+        # print('Inside mirror function')
     
         current_x = self.head.xcor()
         current_y = self.head.ycor()
         
         # Warping across the horizontal boundaries
         if current_x > 290 and self.head.heading() == RIGHT:
-            print("snake went through right wall")
+            # print("snake went through right wall")
             self.head.setx(-290) 
             
         elif current_x < -290 and self.head.heading() == LEFT:
-            print("snake went through left wall")
+            # print("snake went through left wall")
             
             self.head.setx(290)
             
         if current_y > 290 and self.head.heading() == UP:
-            print("snake went through up wall")
+            # print("snake went through up wall")
             self.head.sety(-290)
             
         elif current_y < -290 and self.head.heading() == DOWN:
-            print("snake went through down wall")
+            # print("snake went through down wall")
             self.head.sety(290)
         
     def move(self):
@@ -72,7 +72,7 @@ class Snake:
         self.head.forward(MOVE_DISTANCE)
 
     def up(self):
-        print('inside up function')
+        # print('inside up function')
         cur_heading = self.head.heading()
         if cur_heading == DOWN or cur_heading == UP:
             
@@ -80,14 +80,14 @@ class Snake:
         else:
             self.head.setheading(UP)
     def down(self):
-        print('inside down function')
+        # print('inside down function')
         cur_heading = self.head.heading()
         if cur_heading == UP or cur_heading == DOWN:
             return
         else: 
             self.head.setheading(DOWN)
     def right(self):
-        print('inside right function')
+        # print('inside right function')
         cur_heading = self.head.heading()
         if cur_heading == LEFT or cur_heading == RIGHT:
             return
@@ -97,7 +97,7 @@ class Snake:
         else:
             self.head.setheading(RIGHT)
     def left(self):
-        print('inside left function')
+        # print('inside left function')
         cur_heading = self.head.heading()
         if cur_heading == RIGHT or cur_heading == LEFT:
             return

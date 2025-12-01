@@ -77,7 +77,7 @@ def game_loop():
         # Detect collision with any segment in the tail
         for segment in snake.segments[1:]:
             if snake.head.distance(segment) < 10:
-                print('Inside detecting collision with itself segment')
+                # print('Inside detecting collision with itself segment')
                 # game_is_on=False
                 # scoreboard.game_over()
                 scoreboard.reset()
