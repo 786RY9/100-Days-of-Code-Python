@@ -3,6 +3,7 @@ from turtle import Screen
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
+import random
 
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
@@ -46,11 +47,15 @@ def game_loop():
         
         
         # generating car every 6th of game loop      
-        if game_loop_runs%6 == 0:
+            # if game_loop_runs%6 == 0:
+            #     car_manager.generate_car()
+        random_chance = random.randint(1,6)
+        if random_chance == 1:
             car_manager.generate_car()
         
-        for car in car_manager.all_cars: 
-            if abs(car.xcor() - player.xcor()) <= 47 and abs(car.ycor() - player.ycor()) <= 37:
+        for car in car_manager.all_cars:
+            if car.distance(player)<28:
+            # if abs(car.xcor() - player.xcor()) <= 47 and abs(car.ycor() - player.ycor()) <= 37:
             # if car.xcor() - 40 < player.xcor() < car.xcor() + 40 and abs(car.ycor() - player.ycor()) < 20:
                 print('Hit with a car')
                 game_is_on = False

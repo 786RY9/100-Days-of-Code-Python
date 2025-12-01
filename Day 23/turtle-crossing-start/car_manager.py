@@ -6,10 +6,9 @@ import random
 
 
 
-class CarManager(Turtle):
+class CarManager:
     
     def __init__(self):
-        super().__init__()
         global STARTING_MOVE_DISTANCE
         self.speed = STARTING_MOVE_DISTANCE
         self.all_cars = []
@@ -17,21 +16,19 @@ class CarManager(Turtle):
         
         
     def generate_car(self):
-        self.hideturtle()
         new_car = Turtle('square')
         new_car.penup()
         color_s = random.choice(COLORS)
         new_car.color(color_s)
-        new_car.shapesize(stretch_len=4, stretch_wid=2)
+        new_car.shapesize(stretch_len=2, stretch_wid=1)
         new_car.setheading(180)
-        y_pos = random.randint(-230,230)
-        new_car.goto(x=280,y=y_pos)
+        y_pos = random.randint(-250,250)
+        new_car.goto(x=300,y=y_pos)
         self.all_cars.append(new_car)
         return new_car
     
     def increase_cars_speed(self):
         global MOVE_INCREMENT
-        global STARTING_MOVE_DISTANCE
         self.speed += MOVE_INCREMENT
         print(f'Increased cars speed by: {MOVE_INCREMENT}')
         print(f"{self.speed}")

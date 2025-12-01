@@ -16,7 +16,7 @@ class Player(Turtle):
         self.shape('turtle')
         self.setheading(90)
         self.penup()
-    
+     
     
     def have_reached_finish_line(self):
         if self.ycor()<FINISH_LINE_Y:
