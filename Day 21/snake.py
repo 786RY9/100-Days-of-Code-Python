@@ -20,7 +20,7 @@ class Snake:
     def create_snake(self):
         i = 0
         if i ==0:
-            new_segment = Turtle('turtle')
+            new_segment = Turtle('square')
             new_segment.color('white')
             new_segment.penup()
             new_segment.goto((0,0))
@@ -46,23 +46,22 @@ class Snake:
         current_y = self.head.ycor()
         
         # Warping across the horizontal boundaries
-        if current_x > 280 and self.head.heading() == RIGHT:
-            # Snake went off the right edge, warp to the left edge
-            # We set it to -280 (or -270) to place it just inside the boundary
-            self.head.setx(-280) 
+        if current_x > 290 and self.head.heading() == RIGHT:
+            print("snake went through right wall")
+            self.head.setx(-290) 
             
-        elif current_x < -280 and self.head.heading() == LEFT:
-            # Snake went off the left edge, warp to the right edge
-            self.head.setx(280)
+        elif current_x < -290 and self.head.heading() == LEFT:
+            print("snake went through left wall")
             
-        # Warping across the vertical boundaries
-        if current_y > 280 and self.head.heading() == UP:
-            # Snake went off the top edge, warp to the bottom edge
-            self.head.sety(-280)
+            self.head.setx(290)
             
-        elif current_y < -280 and self.head.heading() == DOWN:
-            # Snake went off the bottom edge, warp to the top edge
-            self.head.sety(280)
+        if current_y > 290 and self.head.heading() == UP:
+            print("snake went through up wall")
+            self.head.sety(-290)
+            
+        elif current_y < -290 and self.head.heading() == DOWN:
+            print("snake went through down wall")
+            self.head.sety(290)
         
     def move(self):
         
@@ -73,28 +72,44 @@ class Snake:
         self.head.forward(MOVE_DISTANCE)
 
     def up(self):
-        # print('inside up function')
+        print('inside up function')
         cur_heading = self.head.heading()
-        if cur_heading == DOWN:
+        if cur_heading == DOWN or cur_heading == UP:
+            
             return
         else:
             self.head.setheading(UP)
     def down(self):
+        print('inside down function')
         cur_heading = self.head.heading()
-        if cur_heading == UP:
+        if cur_heading == UP or cur_heading == DOWN:
             return
         else: 
             self.head.setheading(DOWN)
     def right(self):
+        print('inside right function')
         cur_heading = self.head.heading()
-        if cur_heading == LEFT:
+        if cur_heading == LEFT or cur_heading == RIGHT:
             return
+        elif cur_heading == UP or cur_heading == DOWN:
+            self.move()
+            self.head.setheading(RIGHT)
         else:
             self.head.setheading(RIGHT)
     def left(self):
+        print('inside left function')
         cur_heading = self.head.heading()
-        if cur_heading == RIGHT:
+        if cur_heading == RIGHT or cur_heading == LEFT:
             return
+        elif cur_heading == UP or cur_heading == DOWN:
+            self.move()
+            self.head.setheading(LEFT)
         else:
             self.head.setheading(LEFT)
 
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
