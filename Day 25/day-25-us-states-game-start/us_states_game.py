@@ -33,9 +33,6 @@ while len(correct_guess) < 50:
     # turtle.sety(620)
     # screen.goto(x=-620,y=620)
     user_answer = screen.textinput(title=f"{len(correct_guess)}/50 Guess the State",prompt="What's another state's name?").title()
-
-
-
     
     # print(user_answer)
     states_names = list(states_data["state"])
