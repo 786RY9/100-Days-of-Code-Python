@@ -42,9 +42,17 @@ correct_guess = []
 pak_provinces = pd.read_csv("Day 25/Pak-states_guessing_game/Pakistan_states_with_cords.csv")
 pak_provinces_names = pak_provinces["Province"].to_list()
 # print(pak_provinces)
+missing_states=[]
 while len(correct_guess) < 6:
     
     user_answer = screen.textinput(title=f"{len(correct_guess)}/6", prompt="Guess another state.").title()
+    if user_answer == 'Exit':
+        missing_states = [province for province in pak_provinces_names if province not in correct_guess]
+        print(missing_states)
+        print(correct_guess)
+        to_learn_provinces = pd.DataFrame(missing_states)
+        to_learn_provinces.to_csv("To_learn_Pakistan_Provinces.csv")
+        break
     
     if user_answer in pak_provinces_names:
         correct_guess.append(user_answer)

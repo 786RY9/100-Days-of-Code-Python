@@ -37,6 +37,13 @@ while len(correct_guess) < 50:
     # print(user_answer)
     states_names = list(states_data["state"])
     # print(list(states_names))
+    missing_states = []
+    if user_answer == 'Exit':
+        missing_states = [state for state in states_names if state not in correct_guess]
+        print(missing_states)
+        new_data = pd.DataFrame(missing_states)
+        new_data.to_csv("states_to_learn.csv")
+        break
     if user_answer in states_names:
         t = turtle.Turtle()
         t.hideturtle()
