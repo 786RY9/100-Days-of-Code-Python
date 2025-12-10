@@ -23,16 +23,11 @@ words_to_learn = data.to_dict(orient='records')
 
 
 def knew_it():
-    global words_to_learn
-    if len(words_to_learn)>0:
+    if current_word in words_to_learn:
         words_to_learn.remove(current_word)
-        keys = words_to_learn[0].keys()
         
-        with open("Day 31/flash-card-project-start/data/words_to_learn_csv.csv","w",newline='',encoding='utf8') as file:
-            dict_writer = csv.DictWriter(file, fieldnames=keys)
-            dict_writer.writeheader()
-            dict_writer.writerows(words_to_learn)
-        
+    data = pd.DataFrame(words_to_learn)
+    data.to_csv("Day 31/flash-card-project-start/data/words_to_learn_csv.csv", index=False)
     next_card()
 
 def next_card():
