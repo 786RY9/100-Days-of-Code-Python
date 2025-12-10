@@ -39,7 +39,7 @@ def save():
                     #Reading old data
                     data = json.load(file)
                     # print(data)
-                    # updating old data with new data
+                    
                     
             except FileNotFoundError:
                 print('File does not exists. Creating File and writing data to it.')
@@ -47,6 +47,7 @@ def save():
                 # saving updated data
                     json.dump(new_data,file,indent=4)
             else:
+                # updating old data with new data
                 data.update(new_data)
                 with open('/home/ry/Pictures/100 days of Python/data.json',mode='w') as file:
                     json.dump(data,file,indent=4)
