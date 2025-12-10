@@ -57,8 +57,7 @@ window.config(padx=50,pady=50,bg=BACKGROUND_COLOR)
 image_path = "Day 31/flash-card-project-start/images/card_back.png"
 image = PhotoImage(file=image_path)
 canvas = Canvas(width=800,height=526,bg=BACKGROUND_COLOR,highlightthickness=0)
-background_image = canvas.create_image(400,263,image=image)
-canvas.grid(column=0,row=0)
+# background_image = canvas.create_image(400,263,image=image)
 
 front_image_path = PhotoImage(file="Day 31/flash-card-project-start/images/card_front.png")
 front_image = canvas.create_image(400,263,image=front_image_path)
